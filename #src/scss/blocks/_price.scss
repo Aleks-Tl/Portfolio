@@ -27,14 +27,14 @@
         margin-top: 60px;
         padding: 0 50px 0 75px;
         display: grid;
-        grid-template: repeat(3, 42px) / repeat(2, 335px);
+        grid-template: repeat(3, minmax(42px, auto)) / repeat(2, 335px);
         row-gap: 15px;
         justify-content: space-between;
         
     }
     &__item {
         display: grid;
-        grid-template: 21px 18px / 200px 125px;
+        grid-template: 21px mainmax(18px, auto) / 200px 125px;
         row-gap: 5px;
     }
     &__cost {
