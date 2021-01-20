@@ -411,13 +411,13 @@
                         <a href="" class="contacts__link"><img src="img/icons/social/Instagram-straith.svg" alt="instagram"></a>
                     </div>
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
-                    <form action="#" class="contacts__form">
+                    <form action="#" id="contacts" class="contacts__form">
                         <div class="contacts__input">
-                            <input required name="name" id="name" type="text">
+                            <input name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input required name="email" id="email" type="email">
+                            <input name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
@@ -427,7 +427,8 @@
                         <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
                             <div class="contacts__policy">
-                                <input required type="checkbox">
+                                <input name="policy" type="checkbox">
+                                <label for="policy"></label>
                                 <span>Я согласен(а) с <a href="/Policy.html">политикой конфиденциальности</a></span>
                             </div>
                         </div>
@@ -436,7 +437,9 @@
             </div>
         </div>
     </section>
-
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
